@@ -1,6 +1,6 @@
-  Blush & Bloom — Makeup E-commerce Performance Case Study
+# Blush & Bloom — Makeup E-commerce Performance Case Study
 
-   Features
+## Features
 - Login/demo entry page (name + email; no real account system)
 - Makeup storefront with product search and category filtering
 - Individual product details
@@ -9,7 +9,7 @@
 - Flask session-based cart
 - Locust workload for performance testing customer journeys
 
-   Run locally
+## Run locally
 1. Open this folder in VS Code.
 2. In the terminal:
    ```bash
@@ -33,7 +33,7 @@
    ```
 6. Open http://127.0.0.1:5000/
 
-   Performance test
+## Performance test
 Keep Flask running. Open a second terminal in this folder and run:
 ```bash
 locust -f locustfile.py --host http://127.0.0.1:5000 --csv makeup_baseline
@@ -42,7 +42,7 @@ Open http://localhost:8089 and run a test with 10 users first. Later repeat with
 
 Locust creates CSV files. Use those real measurements for response time, P95, throughput and failure rate. Do not present sample or invented values as measured results.
 
-   Notes
+## Notes
 - This is a local academic prototype, not a production store.
 - Login is a demo form, not secure authentication.
 - Checkout is intentionally a demo alert; no payment is processed.
